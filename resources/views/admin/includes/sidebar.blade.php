@@ -1,11 +1,11 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <!-- Brand Logo -->
-  
+
 
   <!-- Sidebar -->
   <div class="sidebar">
     <!-- Sidebar user panel (optional) -->
-  
+
     <ul class="pt-3 nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
       <!-- Add icons to the links using the .nav-icon class
            with font-awesome or any other icon font library -->
@@ -33,7 +33,7 @@
           </p>
         </a>
       </li>
-    
+
       <li class="nav-item">
         <a href="{{route('admin.event.index')}}" class="nav-link">
           <i class="nav-icon fas fa-th-list"></i>
@@ -42,10 +42,20 @@
           </p>
         </a>
       </li>
+        <li class="nav-item">
+            <a href="{{route('admin.setting.index')}}" class="nav-link">
+                <i class="nav-icon fas fa-th-list"></i>
+                <p>
+                    Настройка
+                </p>
+            </a>
+        </li>
     </ul>
 
+
+
     <!-- Sidebar Menu -->
-   
+
   </div>
   <!-- /.sidebar -->
 </aside>

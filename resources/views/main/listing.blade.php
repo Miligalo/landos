@@ -355,6 +355,9 @@
         <script>
                 let markerUrl = "{{asset('assets/images/marker.png')}}"
                 let imagesUrl = "{{asset('assets/images/')}}"
+
+
+                let settingLoc = {!! json_encode($settings) !!};
                 {{--let mapEvents = "{{json_encode($events)}}"--}}
                 const mapEvents = {!! json_encode($events) !!};
 

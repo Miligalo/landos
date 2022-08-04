@@ -5,36 +5,32 @@ namespace App\Http\Controllers\Admin\Event;
 use App\Http\Controllers\Controller;
 use App\Models\City;
 use App\Models\Event;
-use Geocodio\Geocodio;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Requests\Admin\Event\StoreRequest;
 use App\Http\Requests\Admin\Event\UpdateRequest;
 use App\Models\Category;
-use Geocoding\Geocoding;
 
-use Geocoder\Laravel\ProviderAndDumperAggregator as Geocoder;
 
 class EventController extends Controller
 {
     public function eventIndex()
     {
-        $geo = new City("AIzaSyA8lfYZcB-K2UFBzJ0hvEj2sSNLanD0hpE");
-        $adress = $geo->getCoordinates("Одесса, Филатова 12");
-        dd($adress);
         $events = Event::all();
         return view('admin.event.index',compact('events'));
     }
 
     public function eventCreate()
     {
+//        $geo = new City("AIzaSyA8lfYZcB-K2UFBzJ0hvEj2sSNLanD0hpE");
+//        $adress = $geo->getCoordinates("Одесса, Филатова 12");
         $categories = Category::all();
-        $cities = City::all();
-        return view('admin.event.create', compact('categories', 'cities'));
+        return view('admin.event.create', compact('categories'));
     }
 
     public function eventStore(StoreRequest $request)
     {
+
         $data = $request->validated();
         $data['image'] = Storage::disk('public')->put('/images', $data['image']);
         Event::firstOrCreate($data);

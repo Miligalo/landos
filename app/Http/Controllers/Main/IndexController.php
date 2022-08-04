@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Main;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Event;
+use App\Models\Setting;
 use Illuminate\Http\Request;
 
 
@@ -19,7 +20,9 @@ class IndexController extends Controller
             $event->categoryTitle = Category::find($event->category_id)->title;
             $event->urlEvent = route('main.show', $event->id);
         }
-        return view('main.listing', compact('events', 'categories'));
+        $settings = Setting::first();
+
+        return view('main.listing', compact('events', 'categories', 'settings'));
     }
 
     public function searchMain(Request $request)
@@ -38,7 +41,8 @@ class IndexController extends Controller
             $event->categoryTitle = Category::find($event->category_id)->title;
             $event->urlEvent = route('main.show', $event->id);
         }
-        return view('main.listing', compact('events','categories'));
+        $settings = Setting::first();
+        return view('main.listing', compact('events','categories','settings'));
     }
 
     public function showEvent($event){

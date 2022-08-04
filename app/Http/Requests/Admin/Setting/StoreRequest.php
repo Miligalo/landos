@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests\Admin\Event;
+namespace App\Http\Requests\Admin\Setting;
 
 use Illuminate\Foundation\Http\FormRequest;
 
@@ -23,19 +23,10 @@ class StoreRequest extends FormRequest
      */
     public function rules()
     {
-
         return [
             'title' => 'required|string',
-            'description' => 'required|string',
-            'category_id' => 'required|integer|exists:categories,id',
-            'phone' => 'required|numeric',
-            'latitude' => 'required|numeric',
-            'longitude' => 'required|numeric',
-            'city_id' => 'required|string',
-            'location' => 'required|string',
-            'people_count' => 'required|integer',
-            'image'=> 'required|file',
+            'city' => 'required|string',
+            'zoom' => 'required|integer',
         ];
     }
-
 }

@@ -72,11 +72,7 @@
   $.widget.bridge('uibutton', $.ui.button)
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize&key=AIzaSyA8lfYZcB-K2UFBzJ0hvEj2sSNLanD0hpE"></script>
-<script type="text/javascript" src="{{asset('assets/js/plugins.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/js/scripts.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/js/map_infobox.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/js/markerclusterer.js')}}"></script>
-<script type="text/javascript" src="{{asset('assets/js/maps.js')}}"></script>
+
 <script src="{{asset('plugins/moment/moment.min.js')}}"></script>
 <script src="{{asset('plugins/daterangepicker/daterangepicker.js')}}"></script>
 <script src="{{asset('plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>

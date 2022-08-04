@@ -12,12 +12,12 @@
         mapEvents.forEach(function (e) {
             locations.push([locationData(e['urlEvent'], e['categoryTitle'], e['image'], e['title'], e['location'], e['phone'], "5", "27"), e['latitude'], e['longitude'], 0, markerIcon],)
         })
-
+        console.log(settingLoc['latitude'])
 
         var map = new google.maps.Map(document.getElementById('map-main'), {
-            zoom: 9,
+            zoom: settingLoc['zoom'],
             scrollwheel: false,
-            center: new google.maps.LatLng(46.51, 30.70),
+            center: new google.maps.LatLng(settingLoc['latitude'], settingLoc['longitude']),
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             zoomControl: false,
             mapTypeControl: false,

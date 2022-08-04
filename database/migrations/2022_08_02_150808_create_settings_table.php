@@ -13,20 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('events', function (Blueprint $table) {
+        Schema::create('settings', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->text('description');
-            $table->string('location');
             $table->decimal('latitude', 18, 15);
             $table->decimal('longitude', 18, 15);
-            $table->string('phone');
-            $table->unsignedBigInteger('category_id');
-            $table->string('city_id');
-            $table->decimal('people_count')->nullable();
-            $table->string('image')->nullable();
-            $table->timestamps();
-            $table->foreign('category_id')->references('id')->on('categories');
+            $table->integer('zoom');
         });
     }
 
@@ -37,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('events');
+        Schema::dropIfExists('settings');
     }
 };

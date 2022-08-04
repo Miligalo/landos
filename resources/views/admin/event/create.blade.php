@@ -90,13 +90,12 @@
 {{--                    </select>--}}
 {{--                </div>--}}
                 <div class="form-group">
-                    <label>Выберите город</label>
-                    <select name="city_id" class="form-control">
-                        @foreach ($cities as $city)
-                            <option value="{{$city->id}}"
-                                {{$city->id == old('city_id') ? 'selected' : ''}}>{{$city->name}}</option>
-                        @endforeach
-                    </select>
+                    <label for>Название города</label>
+                    <input type="text" class="form-control" name="city_id" placeholder="Название города">
+                    @error('city_id')
+                    <div class="text-damger">Это поле нужно заполнить</div>
+                    @enderror
+                </div>
 {{--                <div class="header-search-select-item" style="margin: 20px 20px 60px 40px;">--}}
 {{--                    <select name="category_id" data-placeholder="Выбери категорию" class="chosen-select" >--}}
 {{--                        <option>Выбери категорию</option>--}}

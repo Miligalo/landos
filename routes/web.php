@@ -51,6 +51,15 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function(){
             Route::patch('/{user}', 'UserController@userUpdate')->name('admin.user.update');
             Route::delete('/{user}', 'UserController@userDelete')->name('admin.user.delete');
         });
+    Route::group(['namespace'=>'Setting', 'prefix' => 'settings'], function(){
+        Route::get('/', 'SettingController@settingIndex')->name('admin.setting.index');
+        Route::get('/create', 'SettingController@settingCreate')->name('admin.setting.create');
+        Route::post('/', 'SettingController@settingStore')->name('admin.setting.store');
+        Route::get('/{setting}', 'SettingController@settingShow')->name('admin.setting.show');
+        Route::get('/{setting}/edit', 'SettingController@settingEdit')->name('admin.setting.edit');
+        Route::patch('/{setting}', 'SettingController@settingUpdate')->name('admin.setting.update');
+        Route::delete('/{setting}', 'SettingController@settingDelete')->name('admin.setting.delete');
+    });
 });
 
 
