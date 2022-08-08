@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Main;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\Main\MainRequest;
+use App\Models\Bid;
 use App\Models\Category;
 use App\Models\Event;
 use App\Models\Setting;
@@ -48,5 +50,15 @@ class IndexController extends Controller
     public function showEvent($event){
         $event = Event::query()->where('id',$event)->first();
         return view('main.single', compact('event'));
+    }
+
+    public function index(){
+        return view('main.index');
+    }
+
+    public function getContact(MainRequest $request){
+        $data = $request->validated();
+        Bid::firstOrCreate($data);
+        return redirect()->route('main.listing');
     }
 }

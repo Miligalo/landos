@@ -65,7 +65,7 @@
 {{--                                    <a href="#">Home <i class="fa fa-caret-down"></i></a>--}}
 {{--                                    <!--second level -->--}}
 {{--                                    <ul>--}}
-{{--                                        <li><a href="../../../../../../Users/User/Desktop/Новая%20папка%20(6)/citybook/index.html">Parallax Image</a></li>--}}
+{{--                                        <li><a href="../../../../../../Users/User/Desktop/Новая%20папка%20(6)/citybook/index.blade.php">Parallax Image</a></li>--}}
 {{--                                        <li><a href="../../../../../../Users/User/Desktop/Новая%20папка%20(6)/citybook/index2.html">Video</a></li>--}}
 {{--                                        <li><a href="../../../../../../Users/User/Desktop/Новая%20папка%20(6)/citybook/index3.html">Map</a></li>--}}
 {{--                                        <li><a href="../../../../../../Users/User/Desktop/Новая%20папка%20(6)/citybook/index4.html">Slideshow</a></li>--}}
