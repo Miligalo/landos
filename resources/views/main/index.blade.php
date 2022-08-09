@@ -90,13 +90,26 @@
         <div class="logo-holder">
             <a href="index.blade.php"><img src="" alt=""></a>
         </div>
+        <div class="header-inner">
+        <div class="logo-holder">
+            <a href="index.blade.php"><img src="" alt=""></a>
+        </div>
+        <div class="nav-holder main-menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="{{route('main.index')}}">Главная страница</a>
+                        <a href="{{route('main.listing')}}">События</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <!-- nav-button-wrap-->
         <div class="nav-button-wrap color-bg">
             <div class="nav-button">
                 <span></span><span></span><span></span>
             </div>
         </div>
-        <h4>Ивенты</h4>
         <!-- nav-button-wrap end-->
         <!--  navigation -->
 
@@ -130,9 +143,9 @@
                             <div class="row">
                                 <div class="col-md-11 col-lg-9 col-xl-6">
                                     <div class="border-modern border-modern-inset-left"><span class="border-modern-item-1" data-caption-animate="fadeInDown" data-caption-delay="850s"></span>
-                                        <div class="text-white text-uppercase jumbotron-custom" data-caption-animate="fadeInLeft" data-caption-delay="110s">Все що необхідно для <span class="text-thin d-block">енергоаудитора</span></div>
+                                        <div class="text-white text-uppercase jumbotron-custom" data-caption-animate="fadeInLeft" data-caption-delay="110s">Проведи идеально время с <span class="text-thin d-block">Socializer</span></div>
                                         <div data-caption-animate="fadeInUp" data-caption-delay="450s">
-                                            <p class="big text-white d-md-inline-block">Зібрано разом на нашій онлайн платформі: співтовариство, партнери, клієнти та інструменти</p>
+                                            <p class="big text-white d-md-inline-block">Типы мероприятий для вас: вечеринки, спорт, выставки, знакомства, ...</p>
                                         </div>
                                     </div>
                                 </div>
@@ -151,13 +164,13 @@
             <div class="col-sm-10 col-md-4 height-fill">
                 <article class="icon-box icon-box-top-line icon-box-hover">
                     <div class="box-top">
-                        <div class="box-icon"><span class="icon icon-lg icon-1"></span></div>
+                        <div class="box-icon"><span class="icon icon-lg icon-4"></span></div>
                         <div class="box-header">
                             <h5><a href="#">Участие в мероприятиях</a></h5>
                         </div>
                     </div>
                     <div class="box-body">
-                        <p class="text-black">За допомогою розробленого нами алгоритму калькуляції розрахункова частина сертифіката триватиме лічені хвилини</p>
+                        <p class="text-black">Примите участие в любом заинтерисовавшим вас мероприятии в вашем городе</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -170,7 +183,7 @@
                         </div>
                     </div>
                     <div class="box-body">
-                        <p class="text-black">Завдяки автоматизації процесів: наш сервіс формує енергетичний сертифікат відповідно до нормативних вимог, з урахуванням всіх додатків. І автоматично відправляє в "ДержЕнергоеффектівность"</p>
+                        <p class="text-black">Создайте и кастомизируйте свои уникальные мероприятия или создайте шаблон и поставте его на повтор</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -183,20 +196,20 @@
                         </div>
                     </div>
                     <div class="box-body">
-                        <p class="text-black">Ми самі є сертифікованими аудиторами та проводимо регулярне навчання і підготовку кадрів спільно з НТУ "ХПІ" </p>
+                        <p class="text-black">Если вы не нашли подходящую для вашего мероприятия категорию, создайте свою</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
             <div class="col-sm-10 col-md-4 height-fill">
                 <article class="icon-box icon-box-hover">
                     <div class="box-top">
-                        <div class="box-icon"><span class="icon icon-lg icon-4"></span></div>
+                        <div class="box-icon"><span class="icon icon-lg icon-1"></span></div>
                         <div class="box-header">
                             <h5><a href="#">Ведение бизнес аккаунта</a></h5>
                         </div>
                     </div>
                     <div class="box-body">
-                        <p class="text-black">Спілкуйтеся в загальному чаті, групах за сферами енергоменеджмету, енегрогоаудиту і по інтересам.</p>
+                        <p class="text-black">Ведите аккаунт от имени своего заведения, размещайте выделяющиеся мероприятия на карте, генерируйте скидки и пропускные билеты в два клика.</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -209,7 +222,7 @@
                         </div>
                     </div>
                     <div class="box-body">
-                        <p class="text-black">На нашій платформі у вас буде можливість знайти нових клієнтів, а також укласти з ними контракти.</p>
+                        <p class="text-black">Найдите себе компанию по общим интересам</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -222,7 +235,7 @@
                         </div>
                     </div>
                     <div class="box-body" id="request-form">
-                        <p class="text-black">Якщо вам ще мало знайома система тендерів, оформити і подати документи вчасно буде важко. У цьому вам допоможуть наші експерти.</p>
+                        <p class="text-black">Получайте уведомления о ближайших мероприятиях на основе ваших предпочтений</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -231,15 +244,15 @@
 
     <section class="section-with-counters bg-accent-gradient text-center">
         <div class="container bg-cape-cod context-dark section-60 section-lg-90">
-            <h4 class="text-rolling-stone font-weight-bold text-uppercase">Тільки для енергоаудиторів</h4>
-            <h3 class="section-title"><span class="text-thin">створити</span> особистий кабінет
+            <h4 class="text-rolling-stone font-weight-bold text-uppercase">Найди себе крутое развлечение</h4>
+            <h3 class="section-title"><span class="text-thin">вместе</span> с нами
             </h3>
             <div class=" list-md-dashed row-40">
                 <div class="row row-30">
                     <div class="col-lg-10 offset-1">
                         <div class="row justify-content-center">
                             <div id="about" class="col-sm-8">
-                                <a href="../../../../../../Users/User/Desktop/mms-energo.com/register.html" class="btn btn-primary btn-block">Зареєструватися</a>
+{{--                                <a href="../../../../../../Users/User/Desktop/mms-energo.com/register.html" class="btn btn-primary btn-block">Зареєструватися</a>--}}
                             </div>
                         </div>
                     </div>
@@ -254,13 +267,10 @@
             <div class="row justify-content-sm-center">
                 <div class="col-md-8 col-xl-12">
                     <p class="text-black">
-                        <b>MMS - energo</b> - єдина Українська система, яка об'єднує в одному місці можливості скорочення термінів проведення аудиту, автоматизації процесу, підвищення доходу та сталого розвитку експертизи.
-                        У нас є унікальний і відпрацьований алгоритм автоматизації роботи з доведеною ефективністю:
+                        <b>Приложение Socializer</b> - уникальное приложение по поиску мероприятий и компаний по интересам.
                     </p>
                     <br>
                     <ul style="list-style: disc;">
-                        <li class="text-black" style="position: relative; left: 50px; width: 80%;">Приложение Socializer - уникальное приложение по поиску мероприятий и компаний по интересам.</li>
-                        <br>
                         <li class="text-black" style="position: relative; left: 50px; width: 80%;"> Вы можете создавать мероприятие в рамках заготовленных категорий (спорт,вечеринки,выставки,знакомства) либо создать собственные.</li>
                         <br>
                         <li class="text-black" style="position: relative; left: 50px; width: 80%;">Также есть возможность вести аккаунт от имени заведения(бизнес). Это дает вам возможность создавать уникальные мероприятия с выделяющемся маркером на карте. Вы можете генерировать собственные QR-коды, которые могут служить вам как скидки, пропускные билеты.</li>
@@ -283,7 +293,7 @@
             <div class="row justify-content-sm-center">
                 <div class="col-md-10 col-lg-10 col-xl-12">
                     <div class="panel card-lg bg-accent-gradient bg-default-outline-btn text-center">
-                        <h3 class="text-white">Замовити <span class="text-thin">зворотній дзвінок</span></h3>
+                        <h3 class="text-white">Записаться <span class="text-thin"> на тестирование</span></h3>
                         <form class="rd-mailform group group-bottom" method="POST" action="{{route('main.contact')}}">
                             @csrf
                             <div class="group-item form-wrap">
@@ -316,7 +326,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="copyright"> &#169; Speech 2017 .  All rights reserved.</div>
+                        <div class="copyright"> &#169; Socializer 2022 .  All rights reserved.</div>
                     </div>
 
                 </div>

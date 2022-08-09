@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::group(['namespace'=>'Main'], function(){
-    Route::get('/', 'IndexController@index')->name('main.listing');
+    Route::get('/', 'IndexController@index')->name('main.index');
     Route::get('/event', 'IndexController@indexMain')->name('main.listing');
     Route::post('/search', 'IndexController@searchMain')->name('main.search');
     Route::get('/event/{event}', 'IndexController@showEvent')->name('main.show');
-    Route::post('/', 'IndexController@getContact')->name('main.contact');
+    Route::post('/lol', 'IndexController@getContact')->name('main.contact');
 });
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function(){

@@ -4944,7 +4944,7 @@ footer.main-footer.fixed-footer {
 	float:left;
 	width:100%;
 }
-.footer-widget #subscribe .enteremail {
+.footer-widget  .enteremail {
 	float:left;
 	width:100%;
 	background:#fff;
@@ -4956,7 +4956,7 @@ footer.main-footer.fixed-footer {
 	border:1px solid rgba(255,255,255,0.21);
 	margin-top:20px;
 }
-.footer-widget #subscribe-button {
+.footer-widget .subscribe-button {
 	float:right;
 	border:none;
 	border-radius:4px;

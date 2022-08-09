@@ -34,7 +34,16 @@
                     <div class="logo-holder">
                         <a href="index.blade.php"><img src="" alt=""></a>
                     </div>
-
+                    <div class="nav-holder main-menu">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="{{route('main.index')}}">Главная страница</a>
+                                    <a href="{{route('main.listing')}}">События</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
                     <!-- nav-button-wrap-->
                     <div class="nav-button-wrap color-bg">
                         <div class="nav-button">
@@ -168,11 +177,34 @@
                         <div class="container">
                             <div class="join-wrap fl-wrap">
                                 <div class="row">
-                                    <div class="col-md-8">
-                                        <h3>Join our online community</h3>
-                                        <p>Grow your marketing and be happy with your online business</p>
-                                    </div>
+{{--                                    <div class="col-md-8">--}}
+{{--                                        <h3>Присоединяся к нашему комьюнити</h3>--}}
+{{--                                        <p>Создавай события с нами</p>--}}
+{{--                                    </div>--}}
+                                    <div class="footer-widget fl-wrap">
+                                        <h3>Подпишись на обновления</h3>
+                                        <div class="subscribe-widget fl-wrap">
+                                            <p>Если хочешь получить бонусы при старте, подпишись</p>
+                                            <div class="" style="width: 300px">
+                                                <form  method="POST" action="{{route('main.contact')}}">
+                                                    @csrf
+                                                    <div>
+                                                        <input class="enteremail" name="name"  placeholder="Имя" type="text">
+                                                    </div>
+                                                    <div>
+                                                        <input class="enteremail" name="phone"  placeholder="Телефон" type="text">
+                                                    </div>
+                                                    <div>
+                                                        <input class="enteremail" name="email"  placeholder="Email" type="text">
+                                                    </div>
+                                                    <div>
+                                                        <input  id="subscribe-button" class="button subscribe-button"  type="submit" value="Отослать">
+                                                    </div>
 
+{{--                                                    <label for="subscribe-email" class="subscribe-message"></label>--}}
+                                                </form>
+                                            </div>
+                                        </div>
                                 </div>
                             </div>
                         </div>
