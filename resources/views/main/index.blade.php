@@ -334,7 +334,7 @@
             <h3 class="text-center">Наша <span class="text-thin">команда</span></h3>
             <div class="row justify-content-sm-center">
                 <div class="col-md-8 col-xl-12">
-{{--                    <div class="owl-carousel owl-carousel-center owl-nav-modern owl-style-minimal owl-style-minimal-inverse text-center" data-autoplay="false" data-loop="true" data-items="1" data-md-items="2" data-xl-items="3" data-stage-padding="15" data-margin="15" data-mouse-drag="false" data-nav="true" data-dots="true">--}}
+                    <div class="owl-carousel owl-carousel-center owl-nav-modern owl-style-minimal owl-style-minimal-inverse text-center" data-autoplay="false" data-loop="true" data-items="1" data-md-items="2" data-xl-items="3" data-stage-padding="15" data-margin="15" data-mouse-drag="false" data-nav="true" data-dots="true">
                     <div class="owl-item text-center" id="id-1">
                         <div class="thumbnail-variant-5">
                             <div class="thumbnail-variant-5-img-wrap"><img class="img-circle" src="landing/img/medvedev.png" width="129" height="129" alt=""></div>
