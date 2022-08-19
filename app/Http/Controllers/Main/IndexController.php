@@ -20,7 +20,7 @@ class IndexController extends Controller
         $categories = Category::all();
         foreach ($events as $event){
             $event->categoryTitle = Category::find($event->category_id)->title;
-            $event->urlEvent = route('main.show', $event->id);
+//            $event->urlEvent = route('main.show', $event->id);
         }
         $settings = Setting::first();
 
@@ -60,5 +60,9 @@ class IndexController extends Controller
         $data = $request->validated();
         Bid::firstOrCreate($data);
         return redirect()->route('main.listing');
+    }
+
+    public function loginView(){
+        return view('main.login');
     }
 }

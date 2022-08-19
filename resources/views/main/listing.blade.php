@@ -13,6 +13,16 @@
         <link type="text/css" rel="stylesheet" href="{{asset('assets/css/plugins.css')}}">
         <link type="text/css" rel="stylesheet" href="{{asset('assets/css/style.css')}}">
         <link type="text/css" rel="stylesheet" href="{{asset('assets/css/color.css')}}">
+        <!-- Google tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-237473960-1">
+        </script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-237473960-1');
+        </script>
         <!--=============== favicons ===============-->
         <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -25,21 +35,25 @@
             <div class="pin"></div>
             <div class="pulse"></div>
         </div>
+
         <!--loader end-->
         <!-- Main  -->
         <div id="main">
             <!-- header-->
             <header class="main-header dark-header fs-header sticky">
                 <div class="header-inner">
-                    <div class="logo-holder">
-                        <a href="index.blade.php"><img src="" alt=""></a>
-                    </div>
+    {{--                    <div class="logo-holder" style="margin: auto;">--}}
+    {{--                        <h2 style="color: white">Socer</h2>--}}
+    {{--                    </div>--}}
+
                     <div class="nav-holder main-menu">
                         <nav>
                             <ul>
                                 <li>
-                                    <a href="{{route('main.index')}}">Главная страница</a>
-                                    <a href="{{route('main.listing')}}">События</a>
+                                    <a href="{{route('main.index')}}">Голованя сторінка</a>
+                                    <a href="{{route('main.listing')}}">Заходи</a>
+                                    <a href="{{route('login')}}">Вхід</a>
+                                    <a href="{{route('register')}}">Реєстрація</a>
                                 </li>
                             </ul>
                         </nav>
@@ -134,19 +148,19 @@
                             <div class="container">
                                 <!-- listing-item -->
                                 @foreach($events as $key => $event)
-                                <div class="listing-item">
+                                <div class="listing-item" style="margin-top: 70px;height: 410px;width: 410px;">
                                     <article class="geodir-category-listing fl-wrap">
                                         <div class="geodir-category-img" >
                                             <img src="{{asset('storage/' . $event->image)}}"   alt="">
                                             <div class="overlay"></div>
-                                            <div class="list-post-counter"><span>4</span><i class="fa fa-heart"></i></div>
+                                            <div class="list-post-counter"><span>{{rand(2,10)}}</span><i class="fa fa-heart"></i></div>
                                         </div>
                                         <div class="geodir-category-content fl-wrap">
                                             <a class="listing-geodir-category" href="listing.html">{{$event->category->title}}</a>
                                             <div class="listing-avatar"><a href="author-single.html"></a>
 
                                             </div>
-                                            <h3><a href="{{route('main.show', $event->id)}}">{{$event->title}}</a></h3>
+                                            <h3>{{$event->title}}</h3>
                                             <p>{{$event->description}}</p>
                                             <div class="geodir-category-options fl-wrap">
                                                 <div class="listing-rating card-popup-rainingvis" data-starrating2="5">
@@ -254,6 +268,5 @@
         <script type="text/javascript" src="{{asset('assets/js/map_infobox.js')}}"></script>
         <script type="text/javascript" src="{{asset('assets/js/markerclusterer.js')}}"></script>
         <script type="text/javascript" src="{{asset('assets/js/maps.js')}}"></script>
-        <script> </script>
     </body>
 </html>

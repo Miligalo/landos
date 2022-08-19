@@ -1,8 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html class="wide wow-animation" lang="uk">
 <head>
-    <title>Створіть швидко енергетичний сертифікат будівлі за допомогою автоматизації процесу . MMS-Energo.</title>
-    <meta name="description" content="Онлайн система для проведення енергоаудиту будівлі: співтовариство, пошук партнерів, клієнтів та інструмент для прискореного створення енергетичного сертифікату.">
+    <title>Створіть або знайдіть найкріщий захід для себе. Socer.</title>
+    <meta name="description" content="Додаток Socer - унікальний додаток з пошуку заходів та компаній за інтересами.">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,16 @@
     <link type="text/css" rel="stylesheet" href="{{asset('assets/css/color.css')}}">
     <link rel="stylesheet" href="{{asset('assets/landing/css/style.css')}}">
     <link href="{{asset('assetslanding/css/toast.css')}}" rel="stylesheet" type="text/css">
+    <!-- Google tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-237473960-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-237473960-1');
+    </script>
     <style>
         @media (min-width: 992px){
             .jumbotron-custom > span {
@@ -48,6 +58,7 @@
 
 
     </style>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async="" src="../../../../../../Users/User/Desktop/mms-energo.com/gtag/js?id=UA-115817031-3"></script>
     <script>
@@ -87,19 +98,17 @@
 <body>
 <header class="main-header dark-header fs-header sticky">
     <div class="header-inner">
-        <div class="logo-holder">
-            <a href="index.blade.php"><img src="" alt=""></a>
-        </div>
-        <div class="header-inner">
-        <div class="logo-holder">
-            <a href="index.blade.php"><img src="" alt=""></a>
+        <div class="logo-holder" style="margin: auto;">
+            <h4 style="color: white">Socer</h4>
         </div>
         <div class="nav-holder main-menu">
             <nav>
                 <ul>
                     <li>
-                        <a href="{{route('main.index')}}">Главная страница</a>
-                        <a href="{{route('main.listing')}}">События</a>
+                        <a href="{{route('main.index')}}">Голованя сторінка</a>
+                        <a href="{{route('main.listing')}}">Заходи</a>
+                        <a href="{{route('login')}}">Вхід</a>
+                        <a href="{{route('register')}}">Реєстрація</a>
                     </li>
                 </ul>
             </nav>
@@ -117,6 +126,7 @@
         <!-- navigation  end -->
     </div>
 </header>
+
 <div class="page">
 {{--    <div class="page-loader page-loader-variant-1">--}}
 {{--        <div><a class="brand brand-md brand-inverse" href="index.htm"><img src="../../../../../../Users/User/Desktop/mms-energo.com/landing/img/logo8_4_203231.png" alt="" width="135" height="34"></a>--}}
@@ -143,10 +153,15 @@
                             <div class="row">
                                 <div class="col-md-11 col-lg-9 col-xl-6">
                                     <div class="border-modern border-modern-inset-left"><span class="border-modern-item-1" data-caption-animate="fadeInDown" data-caption-delay="850s"></span>
-                                        <div class="text-white text-uppercase jumbotron-custom" data-caption-animate="fadeInLeft" data-caption-delay="110s">Проведи идеально время с <span class="text-thin d-block">Socializer</span></div>
+                                        <div class="text-white text-uppercase jumbotron-custom" data-caption-animate="fadeInLeft" data-caption-delay="110s">Проведи ідеальний час з<span class="text-thin d-block">Socer</span></div>
                                         <div data-caption-animate="fadeInUp" data-caption-delay="450s">
-                                            <p class="big text-white d-md-inline-block">Типы мероприятий для вас: вечеринки, спорт, выставки, знакомства, ...</p>
+                                            <p class="big text-white d-md-inline-block">Типи заходів для вас: вечірки, спорт, виставки, знайомства, ...</p>
                                         </div>
+                                        <form action="login">
+                                        <div class="group-item group-item-sm">
+                                            <input href="login" class="btn btn-block btn-white-outline" type="submit" value="Реєстрація">
+                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
@@ -166,11 +181,11 @@
                     <div class="box-top">
                         <div class="box-icon"><span class="icon icon-lg icon-4"></span></div>
                         <div class="box-header">
-                            <h5><a href="#">Участие в мероприятиях</a></h5>
+                            <h5><a href="#">Участь у заходах</a></h5>
                         </div>
                     </div>
                     <div class="box-body">
-                        <p class="text-black">Примите участие в любом заинтерисовавшим вас мероприятии в вашем городе</p>
+                        <p class="text-black">Візьміть участь у будь-якому заході, що зацікавив вас, у вашому місті</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -179,11 +194,11 @@
                     <div class="box-top">
                         <div class="box-icon"><span class="icon icon-lg icon-2"></span></div>
                         <div class="box-header">
-                            <h5><a href="#">Создание своих мероприятий</a></h5>
+                            <h5><a href="#">Створення своїх заходів</a></h5>
                         </div>
                     </div>
                     <div class="box-body">
-                        <p class="text-black">Создайте и кастомизируйте свои уникальные мероприятия или создайте шаблон и поставте его на повтор</p>
+                        <p class="text-black">Створіть та кастомізуйте свої унікальні заходи або створіть шаблон та поставте його на повтор</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -192,11 +207,11 @@
                     <div class="box-top">
                         <div class="box-icon"><span class="icon icon-lg icon-3"></span></div>
                         <div class="box-header">
-                            <h5><a href="#">Создание своих категорий</a></h5>
+                            <h5><a href="#">Створення своїх категорій</a></h5>
                         </div>
                     </div>
                     <div class="box-body">
-                        <p class="text-black">Если вы не нашли подходящую для вашего мероприятия категорию, создайте свою</p>
+                        <p class="text-black">Якщо ви не знайшли відповідну для вашого заходу категорію, створіть свою</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -205,11 +220,11 @@
                     <div class="box-top">
                         <div class="box-icon"><span class="icon icon-lg icon-1"></span></div>
                         <div class="box-header">
-                            <h5><a href="#">Ведение бизнес аккаунта</a></h5>
+                            <h5><a href="#">Ведення бізнес облікового запису</a></h5>
                         </div>
                     </div>
                     <div class="box-body">
-                        <p class="text-black">Ведите аккаунт от имени своего заведения, размещайте выделяющиеся мероприятия на карте, генерируйте скидки и пропускные билеты в два клика.</p>
+                        <p class="text-black">Ведіть обліковий запис від імені свого закладу, розміщуйте заходи, що виділяються на карті, генеруйте знижки та пропускні квитки в два кліки.</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -218,11 +233,11 @@
                     <div class="box-top">
                         <div class="box-icon"><span class="icon icon-lg icon-5"></span></div>
                         <div class="box-header">
-                            <h5><a href="#">Социальное общение</a></h5>
+                            <h5><a href="#">Соціальне спілкування</a></h5>
                         </div>
                     </div>
                     <div class="box-body">
-                        <p class="text-black">Найдите себе компанию по общим интересам</p>
+                        <p class="text-black">Знайдіть собі компанію за спільними інтересами</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -231,11 +246,11 @@
                     <div class="box-top">
                         <div class="box-icon"><span class="icon icon-lg icon-6"></span></div>
                         <div class="box-header">
-                            <h5><a href="#">Уникальный подбор мероприятий</a></h5>
+                            <h5><a href="#">Унікальний добір заходів</a></h5>
                         </div>
                     </div>
                     <div class="box-body" id="request-form">
-                        <p class="text-black">Получайте уведомления о ближайших мероприятиях на основе ваших предпочтений</p>
+                        <p class="text-black">Отримуйте повідомлення про найближчі заходи на основі ваших переваг</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -244,8 +259,8 @@
 
     <section class="section-with-counters bg-accent-gradient text-center">
         <div class="container bg-cape-cod context-dark section-60 section-lg-90">
-            <h4 class="text-rolling-stone font-weight-bold text-uppercase">Найди себе крутое развлечение</h4>
-            <h3 class="section-title"><span class="text-thin">вместе</span> с нами
+            <h4 class="text-rolling-stone font-weight-bold text-uppercase">Знайди собі круту розвагу</h4>
+            <h3 class="section-title"><span class="text-thin">разом</span> з нами
             </h3>
             <div class=" list-md-dashed row-40">
                 <div class="row row-30">
@@ -267,17 +282,17 @@
             <div class="row justify-content-sm-center">
                 <div class="col-md-8 col-xl-12">
                     <p class="text-black">
-                        <b>Приложение Socializer</b> - уникальное приложение по поиску мероприятий и компаний по интересам.
+                        <b>Додаток Socer</b> - унікальний додаток з пошуку заходів та компаній за інтересами.
                     </p>
                     <br>
                     <ul style="list-style: disc;">
-                        <li class="text-black" style="position: relative; left: 50px; width: 80%;"> Вы можете создавать мероприятие в рамках заготовленных категорий (спорт,вечеринки,выставки,знакомства) либо создать собственные.</li>
+                        <li class="text-black" style="position: relative; left: 50px; width: 80%;"> Ви можете створювати захід у рамках заготовлених категорій (спорт, вечірки, виставки, знайомства) або створити власні.</li>
                         <br>
-                        <li class="text-black" style="position: relative; left: 50px; width: 80%;">Также есть возможность вести аккаунт от имени заведения(бизнес). Это дает вам возможность создавать уникальные мероприятия с выделяющемся маркером на карте. Вы можете генерировать собственные QR-коды, которые могут служить вам как скидки, пропускные билеты.</li>
+                        <li class="text-black" style="position: relative; left: 50px; width: 80%;">Також є можливість вести обліковий запис від імені закладу (бізнес). Це дає вам можливість створювати унікальні заходи з маркером, що виділяється на карті. Ви можете генерувати власні QR-коди, які можуть служити як знижки, пропускні квитки.</li>
                     </ul>
 
                     <p class="text-black">
-                        На данном этапе происходит бета-тестирование приложения. Вы можете принять в нем участие, оставив свои контакты. По выходу приложения в свет на ваши аккаанты будет начислен специальный бонус.
+                        На цьому етапі відбувається бета-тестування програми. Ви можете взяти участь у ньому, залишивши свої контакти. Після виходу програми на ваші аккаанти буде нарахований спеціальний бонус.
                     </p>
 
 
@@ -293,20 +308,20 @@
             <div class="row justify-content-sm-center">
                 <div class="col-md-10 col-lg-10 col-xl-12">
                     <div class="panel card-lg bg-accent-gradient bg-default-outline-btn text-center">
-                        <h3 class="text-white">Записаться <span class="text-thin"> на тестирование</span></h3>
-                        <form class="rd-mailform group group-bottom" method="POST" action="{{route('main.contact')}}">
+                        <h3 class="text-white">Форма <span class="text-thin"> зворотнього зв`язку</span></h3>
+                        <form class="rd-mailform group group-bottom"  action="{{route('login')}}">
                             @csrf
-                            <div class="group-item form-wrap">
-                                <input class="form-input" id="index-request-name" type="text" name="name" placeholder="Ваше имя">
-                            </div>
-                            <div class="group-item form-wrap">
-                                <input class="form-input" id="index-request-phone" type="text" name="phone" placeholder="Ваш номер">
-                            </div>
-                            <div class="group-item form-wrap">
-                                <input class="form-input" id="index-request-phone" type="text" name="mail" placeholder="Ваша почта">
-                            </div>
+{{--                            <div class="group-item form-wrap">--}}
+{{--                                <input class="form-input" id="index-request-name" type="text" name="name" placeholder="Ваше ім'я">--}}
+{{--                            </div>--}}
+{{--                            <div class="group-item form-wrap">--}}
+{{--                                <input class="form-input" id="index-request-phone" type="text" name="phone" placeholder="Ваш номер">--}}
+{{--                            </div>--}}
+{{--                            <div class="group-item form-wrap">--}}
+{{--                                <input class="form-input" id="index-request-phone" type="text" name="mail" placeholder="Ваша пошта">--}}
+{{--                            </div>--}}
                             <div class="group-item group-item-sm">
-                                <input class="btn btn-block btn-white-outline" type="submit" value="Отослать">
+                                <input class="btn btn-block btn-white-outline" type="submit" value="Реєстрація">
                             </div>
                         </form>
                     </div>
@@ -314,8 +329,47 @@
             </div>
         </div>
     </section>
+    <section class="section-66 section-md-top-100 section-md-bottom-75" style="padding-bottom: 0 !important;">
+        <div class="container">
+            <h3 class="text-center">Наша <span class="text-thin">команда</span></h3>
+            <div class="row justify-content-sm-center">
+                <div class="col-md-8 col-xl-12">
+{{--                    <div class="owl-carousel owl-carousel-center owl-nav-modern owl-style-minimal owl-style-minimal-inverse text-center" data-autoplay="false" data-loop="true" data-items="1" data-md-items="2" data-xl-items="3" data-stage-padding="15" data-margin="15" data-mouse-drag="false" data-nav="true" data-dots="true">--}}
+                    <div class="owl-item text-center" id="id-1">
+                        <div class="thumbnail-variant-5">
+                            <div class="thumbnail-variant-5-img-wrap"><img class="img-circle" src="landing/img/medvedev.png" width="129" height="129" alt=""></div>
+                            <h4>Максим Медведєв</h4>
+                            <div class="text-dusty-gray">Директор</div>
+                            <div class="divider-fullwidth bg-porcelain"></div>
 
-    <footer class="main-footer dark-footer  ">
+                            <div class="link-group"><span class="icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-black" href="mailto:medvedev@mms-energo.com">medvedev@mms-energo.com</a></div>
+                        </div>
+                    </div>
+                    <div class="owl-item text-center" style="position: relative; top: -20px; left: -20px;">
+                        <div class="thumbnail-variant-5">
+                            <div class="thumbnail-variant-5-img-wrap"><img class="img-circle" src="landing/img/mits.png" width="129" height="129" alt=""></div>
+                            <h4>Микола Миц</h4>
+                            <div class="text-dusty-gray">Комерційний директор</div>
+                            <div class="divider-fullwidth bg-porcelain"></div>
+                            <div class="link-group"><span class="icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-black" href="mailto:mits@mms-energo.com">mits@mms-energo.com</a></div>
+                        </div>
+                    </div>
+                    <div class="owl-item text-center">
+                        <div class="thumbnail-variant-5">
+                            <div class="thumbnail-variant-5-img-wrap"><img class="img-circle" src="landing/img/andrey.png" width="129" height="129" alt=""></div>
+                            <h4>Андрій Свиридов</h4>
+                            <div class="text-dusty-gray">Технічний директор</div>
+                            <div class="divider-fullwidth bg-porcelain"></div>
+                            <div class="link-group"><span class="icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-black" href="mailto:svyrydov@mms-energo.com">svyrydov@mms-energo.com</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
+</section>
+    <footer>
 
         <div class="sub-footer fl-wrap">
             <div class="container">
@@ -326,7 +380,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="copyright"> &#169; Socializer 2022 .  All rights reserved.</div>
+                        <div class="copyright"> &#169; Socer 2022 .  All rights reserved.</div>
                     </div>
 
                 </div>
@@ -335,6 +389,7 @@
     </footer>
 </div>
 <div class="snackbars" id="form-output-global"></div>
+<script type="text/javascript" src="{{asset('assets/js/jquery.min.js')}}"></script>
 <script src="../../../../../../Users/User/Desktop/mms-energo.com/landing/js/core.min.js"></script>
 <script src="../../../../../../Users/User/Desktop/mms-energo.com/landing/js/script.js"></script>
 <script src="../../../../../../Users/User/Desktop/mms-energo.com/landing/js/toast.js"></script>
@@ -344,6 +399,9 @@
 <script type="text/javascript" src="{{asset('assets/js/map_infobox.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/js/markerclusterer.js')}}"></script>
 <script type="text/javascript" src="{{asset('assets/js/maps.js')}}"></script>
+<script src="{{asset("landing/js/core.min.js")}}"></script>
+<script src="{{asset("landing/js/script.js")}}"></script>
+<script src="{{asset("landing/js/toast.js")}}"></script>
 <script>
         $(document).ready(function (){
         $('.ui-to-top').css('display', 'none')

@@ -75,13 +75,8 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label>Выберите город</label>
-                        <select name="city_id" class="form-control">
-                            @foreach ($cities as $city)
-                                <option value="{{$city->id}}"
-                                    {{$city->id == old('city_id') ? 'selected' : ''}}>{{$city->name}}</option>
-                            @endforeach
-                        </select>
+                        <label for>Название города</label>
+                        <input type="text" class="form-control" name="city_id" placeholder="Название города">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputFile">Добавить превью евента</label>

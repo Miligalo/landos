@@ -19,6 +19,7 @@ Route::group(['namespace'=>'Main'], function(){
     Route::post('/search', 'IndexController@searchMain')->name('main.search');
     Route::get('/event/{event}', 'IndexController@showEvent')->name('main.show');
     Route::post('/lol', 'IndexController@getContact')->name('main.contact');
+    Route::get('/loginn', 'IndexController@loginView')->name('main.login.view');
 });
 
 Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function(){

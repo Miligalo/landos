@@ -30,7 +30,6 @@ class EventController extends Controller
 
     public function eventStore(StoreRequest $request)
     {
-
         $data = $request->validated();
         $data['image'] = Storage::disk('public')->put('/images', $data['image']);
         Event::firstOrCreate($data);
@@ -47,13 +46,11 @@ class EventController extends Controller
     public function eventEdit(Event $event)
     {
         $categories = Category::all();
-        $cities = City::all();
-        return view('admin.event.edit', compact('event','categories', 'cities'));
+        return view('admin.event.edit', compact('event','categories'));
     }
 
     public function eventUpdate(UpdateRequest $request, Event $event)
     {
-        dd($request);
         $data = $request->validated();
         $data = array_diff($data,array('', NULL, false));
         if(array_key_exists('image',$data)){
