@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Main;
 
 use App\Http\Controllers\Controller;
+use App\Http\Middleware\Localization;
 use App\Http\Requests\Main\MainRequest;
 use App\Models\Bid;
 use App\Models\Category;

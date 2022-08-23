@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html class="wide wow-animation" lang="uk">
 <head>
-    <title>Створіть або знайдіть найкріщий захід для себе. Socer.</title>
-    <meta name="description" content="Додаток Socer - унікальний додаток з пошуку заходів та компаній за інтересами.">
+    <title>Створіть або знайдіть найкріщий захід для себе. Socializer.</title>
+    <meta name="description" content="Додаток Socializer - унікальний додаток з пошуку заходів та компаній за інтересами.">
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -99,20 +99,20 @@
 <header class="main-header dark-header fs-header sticky">
     <div class="header-inner">
         <div class="logo-holder" style="margin: auto;">
-            <h4 style="color: white">Socer</h4>
+            <h4 style="color: white">Socializer</h4>
         </div>
-        <div class="nav-holder main-menu">
-            <nav>
-                <ul>
-                    <li>
-                        <a href="{{route('main.index')}}">Голованя сторінка</a>
-                        <a href="{{route('main.listing')}}">Заходи</a>
-                        <a href="{{route('login')}}">Вхід</a>
-                        <a href="{{route('register')}}">Реєстрація</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+{{--        <div class="nav-holder main-menu">--}}
+{{--            <nav>--}}
+{{--                <ul>--}}
+{{--                    <li>--}}
+{{--                        <a href="{{route('main.index')}}">Голованя сторінка</a>--}}
+{{--                        <a href="{{route('main.listing')}}">Заходи</a>--}}
+{{--                        <a href="{{route('login')}}">Вхід</a>--}}
+{{--                        <a href="{{route('register')}}">Реєстрація</a>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--            </nav>--}}
+{{--        </div>--}}
         <!-- nav-button-wrap-->
         <div class="nav-button-wrap color-bg">
             <div class="nav-button">
@@ -153,13 +153,14 @@
                             <div class="row">
                                 <div class="col-md-11 col-lg-9 col-xl-6">
                                     <div class="border-modern border-modern-inset-left"><span class="border-modern-item-1" data-caption-animate="fadeInDown" data-caption-delay="850s"></span>
-                                        <div class="text-white text-uppercase jumbotron-custom" data-caption-animate="fadeInLeft" data-caption-delay="110s">Проведи ідеальний час з<span class="text-thin d-block">Socer</span></div>
+                                        <div class="text-white text-uppercase jumbotron-custom" data-caption-animate="fadeInLeft" data-caption-delay="110s">{{__('main.first')}}<span class="text-thin d-block">Socializer</span></div>
                                         <div data-caption-animate="fadeInUp" data-caption-delay="450s">
-                                            <p class="big text-white d-md-inline-block">Типи заходів для вас: вечірки, спорт, виставки, знайомства, ...</p>
+                                            <p class="big text-white d-md-inline-block">{{__('main.second')}}
+                                            </p>
                                         </div>
                                         <form action="login">
                                         <div class="group-item group-item-sm">
-                                            <input href="login" class="btn btn-block btn-white-outline" type="submit" value="Реєстрація">
+                                            <input href="login" class="btn btn-block btn-white-outline" type="submit" value="{{__('main.register')}}">
                                         </div>
                                         </form>
                                     </div>
@@ -181,11 +182,11 @@
                     <div class="box-top">
                         <div class="box-icon"><span class="icon icon-lg icon-4"></span></div>
                         <div class="box-header">
-                            <h5><a href="#">Участь у заходах</a></h5>
+                            <h5><a href="#">{{__('main.mobal')}}</a></h5>
                         </div>
                     </div>
                     <div class="box-body">
-                        <p class="text-black">Візьміть участь у будь-якому заході, що зацікавив вас, у вашому місті</p>
+                        <p class="text-black">{{__('main.mobal_block')}}</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -194,11 +195,11 @@
                     <div class="box-top">
                         <div class="box-icon"><span class="icon icon-lg icon-2"></span></div>
                         <div class="box-header">
-                            <h5><a href="#">Створення своїх заходів</a></h5>
+                            <h5><a href="#">{{__('main.info_second')}}</a></h5>
                         </div>
                     </div>
                     <div class="box-body">
-                        <p class="text-black">Створіть та кастомізуйте свої унікальні заходи або створіть шаблон та поставте його на повтор</p>
+                        <p class="text-black">{{__('main.info_second_block')}}</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -207,11 +208,11 @@
                     <div class="box-top">
                         <div class="box-icon"><span class="icon icon-lg icon-3"></span></div>
                         <div class="box-header">
-                            <h5><a href="#">Створення своїх категорій</a></h5>
+                            <h5><a href="#">{{__('main.unik')}}</a></h5>
                         </div>
                     </div>
                     <div class="box-body">
-                        <p class="text-black">Якщо ви не знайшли відповідну для вашого заходу категорію, створіть свою</p>
+                        <p class="text-black">{{__('main.unik_block')}}</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -220,11 +221,11 @@
                     <div class="box-top">
                         <div class="box-icon"><span class="icon icon-lg icon-1"></span></div>
                         <div class="box-header">
-                            <h5><a href="#">Ведення бізнес облікового запису</a></h5>
+                            <h5><a href="#">{{__('main.biznes')}}</a></h5>
                         </div>
                     </div>
                     <div class="box-body">
-                        <p class="text-black">Ведіть обліковий запис від імені свого закладу, розміщуйте заходи, що виділяються на карті, генеруйте знижки та пропускні квитки в два кліки.</p>
+                        <p class="text-black">{{__('main.biznes_block')}}</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -233,11 +234,11 @@
                     <div class="box-top">
                         <div class="box-icon"><span class="icon icon-lg icon-5"></span></div>
                         <div class="box-header">
-                            <h5><a href="#">Соціальне спілкування</a></h5>
+                            <h5><a href="#">{{__('main.poshuk')}}</a></h5>
                         </div>
                     </div>
                     <div class="box-body">
-                        <p class="text-black">Знайдіть собі компанію за спільними інтересами</p>
+                        <p class="text-black">{{__('main.poshuk_block')}}</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -246,11 +247,11 @@
                     <div class="box-top">
                         <div class="box-icon"><span class="icon icon-lg icon-6"></span></div>
                         <div class="box-header">
-                            <h5><a href="#">Унікальний добір заходів</a></h5>
+                            <h5><a href="#">{{__('main.event')}}</a></h5>
                         </div>
                     </div>
                     <div class="box-body" id="request-form">
-                        <p class="text-black">Отримуйте повідомлення про найближчі заходи на основі ваших переваг</p>
+                        <p class="text-black">{{__('main.event_block')}}</p>
                     </div><a class="btn btn-icon-only btn-icon-single btn-icon-default" href="#"></a>
                 </article>
             </div>
@@ -259,8 +260,8 @@
 
     <section class="section-with-counters bg-accent-gradient text-center">
         <div class="container bg-cape-cod context-dark section-60 section-lg-90">
-            <h4 class="text-rolling-stone font-weight-bold text-uppercase">Знайди собі круту розвагу</h4>
-            <h3 class="section-title"><span class="text-thin">разом</span> з нами
+            <h4 class="text-rolling-stone font-weight-bold text-uppercase">{{__('main.rozvaga')}}</h4>
+            <h3 class="section-title">
             </h3>
             <div class=" list-md-dashed row-40">
                 <div class="row row-30">
@@ -278,21 +279,29 @@
 
     <section class="section-66 section-md-top-100 section-md-bottom-75" style="padding-bottom: 0 !important;">
         <div class="container">
-            <h3 class="text-center">Про <span class="text-thin"> проект</span></h3>
+            <h3 class="text-center">{{__('main.social')}}</span></h3>
             <div class="row justify-content-sm-center">
                 <div class="col-md-8 col-xl-12">
                     <p class="text-black">
-                        <b>Додаток Socer</b> - унікальний додаток з пошуку заходів та компаній за інтересами.
+                        {{__('main.dodatok_soc')}}
                     </p>
+
+                    <p class="text-black">
+                        <b>{{__('main.socializer')}}</b> - {{__('main.socializer_box')}}
+                    </p>
+                    <p class="text-black"><b>{{__('main.socializer_second')}}</b></p>
                     <br>
                     <ul style="list-style: disc;">
-                        <li class="text-black" style="position: relative; left: 50px; width: 80%;"> Ви можете створювати захід у рамках заготовлених категорій (спорт, вечірки, виставки, знайомства) або створити власні.</li>
+                        <li class="text-black" style="position: relative; left: 50px; width: 80%;">  {{__('main.socializer_text_one')}}
+                        </li>
                         <br>
-                        <li class="text-black" style="position: relative; left: 50px; width: 80%;">Також є можливість вести обліковий запис від імені закладу (бізнес). Це дає вам можливість створювати унікальні заходи з маркером, що виділяється на карті. Ви можете генерувати власні QR-коди, які можуть служити як знижки, пропускні квитки.</li>
+                        <li class="text-black" style="position: relative; left: 50px; width: 80%;">{{__('main.socializer_text_two')}}</li>
+                        <br>
+                        <li class="text-black" style="position: relative; left: 50px; width: 80%;">{{__('main.socializer_text_free')}}</li>
                     </ul>
 
                     <p class="text-black">
-                        На цьому етапі відбувається бета-тестування програми. Ви можете взяти участь у ньому, залишивши свої контакти. Після виходу програми на ваші аккаанти буде нарахований спеціальний бонус.
+                        {{__('main.socializer_text_four')}}
                     </p>
 
 
@@ -308,7 +317,7 @@
             <div class="row justify-content-sm-center">
                 <div class="col-md-10 col-lg-10 col-xl-12">
                     <div class="panel card-lg bg-accent-gradient bg-default-outline-btn text-center">
-                        <h3 class="text-white">Форма <span class="text-thin"> зворотнього зв`язку</span></h3>
+                        <h3 class="text-white">{{__('main.text')}}</h3>
                         <form class="rd-mailform group group-bottom"  action="{{route('login')}}">
                             @csrf
 {{--                            <div class="group-item form-wrap">--}}
@@ -321,7 +330,7 @@
 {{--                                <input class="form-input" id="index-request-phone" type="text" name="mail" placeholder="Ваша пошта">--}}
 {{--                            </div>--}}
                             <div class="group-item group-item-sm">
-                                <input class="btn btn-block btn-white-outline" type="submit" value="Реєстрація">
+                                <input class="btn btn-block btn-white-outline" type="submit" value="{{__('main.button')}}">
                             </div>
                         </form>
                     </div>
@@ -331,36 +340,36 @@
     </section>
     <section class="section-66 section-md-top-100 section-md-bottom-75" style="padding-bottom: 0 !important;">
         <div class="container">
-            <h3 class="text-center">Наша <span class="text-thin">команда</span></h3>
+            <h3 class="text-center">{{__('main.team')}}</h3>
             <div class="row justify-content-sm-center">
                 <div class="col-md-8 col-xl-12">
                     <div class="owl-carousel owl-carousel-center owl-nav-modern owl-style-minimal owl-style-minimal-inverse text-center" data-autoplay="false" data-loop="true" data-items="1" data-md-items="2" data-xl-items="3" data-stage-padding="15" data-margin="15" data-mouse-drag="false" data-nav="true" data-dots="true">
                     <div class="owl-item text-center" id="id-1">
                         <div class="thumbnail-variant-5">
-                            <div class="thumbnail-variant-5-img-wrap"><img class="img-circle" src="landing/img/medvedev.png" width="129" height="129" alt=""></div>
-                            <h4>Максим Медведєв</h4>
-                            <div class="text-dusty-gray">Директор</div>
+                            <div class="thumbnail-variant-5-img-wrap"><img class="img-circle" src="img/nick_soc.png" width="129" height="129" alt=""></div>
+                            <h4>{{__('main.nick')}}</h4>
+                            <div class="text-dusty-gray">{{__('main.nick_job')}}</div>
                             <div class="divider-fullwidth bg-porcelain"></div>
 
-                            <div class="link-group"><span class="icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-black" href="mailto:medvedev@mms-energo.com">medvedev@mms-energo.com</a></div>
+                            <div class="link-group"><span class="icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-black" href="aezakminikita@gmail.com">aezakminikita@gmail.com</a></div>
                         </div>
                     </div>
                     <div class="owl-item text-center" style="position: relative; top: -20px; left: -20px;">
                         <div class="thumbnail-variant-5">
-                            <div class="thumbnail-variant-5-img-wrap"><img class="img-circle" src="landing/img/mits.png" width="129" height="129" alt=""></div>
-                            <h4>Микола Миц</h4>
-                            <div class="text-dusty-gray">Комерційний директор</div>
+                            <div class="thumbnail-variant-5-img-wrap"><img class="img-circle" src="img/zahar_soc.png" width="129" height="129" alt=""></div>
+                            <h4>{{__('main.zahar')}}</h4>
+                            <div class="text-dusty-gray">{{__('main.zahar_job')}}</div>
                             <div class="divider-fullwidth bg-porcelain"></div>
-                            <div class="link-group"><span class="icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-black" href="mailto:mits@mms-energo.com">mits@mms-energo.com</a></div>
+                            <div class="link-group"><span class="icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-black" href="zahardementiev@gmail.com">zahardementiev@gmail.com</a></div>
                         </div>
                     </div>
                     <div class="owl-item text-center">
                         <div class="thumbnail-variant-5">
-                            <div class="thumbnail-variant-5-img-wrap"><img class="img-circle" src="landing/img/andrey.png" width="129" height="129" alt=""></div>
-                            <h4>Андрій Свиридов</h4>
-                            <div class="text-dusty-gray">Технічний директор</div>
+                            <div class="thumbnail-variant-5-img-wrap"><img class="img-circle" src="img/yurii_soc.png" width="129" height="129" alt=""></div>
+                            <h4>{{__('main.yra')}}</h4>
+                            <div class="text-dusty-gray">{{__('main.yra_job')}}</div>
                             <div class="divider-fullwidth bg-porcelain"></div>
-                            <div class="link-group"><span class="icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-black" href="mailto:svyrydov@mms-energo.com">svyrydov@mms-energo.com</a></div>
+                            <div class="link-group"><span class="icon icon-xxs icon-primary fa-envelope-o"></span><a class="link-black" href="kulaxy13@gmail.com">kulaxy13@gmail.com</a></div>
                         </div>
                     </div>
                 </div>
@@ -380,7 +389,7 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="copyright"> &#169; Socer 2022 .  All rights reserved.</div>
+                        <div class="copyright"> &#169; Socializer 2022 .  All rights reserved.</div>
                     </div>
 
                 </div>

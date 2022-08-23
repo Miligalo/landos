@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::group(['namespace'=>'Main'], function(){
-    Route::get('/', 'IndexController@index')->name('main.index');
+Route::group(['namespace'=>'Main',], function(){
+    Route::get('/{locale?}', 'IndexController@index')->name('main.index');
     Route::get('/event', 'IndexController@indexMain')->name('main.listing');
     Route::post('/search', 'IndexController@searchMain')->name('main.search');
     Route::get('/event/{event}', 'IndexController@showEvent')->name('main.show');

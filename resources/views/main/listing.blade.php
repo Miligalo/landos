@@ -76,6 +76,7 @@
             <!-- wrapper -->
             <div id="wrapper">
               <!-- Map -->
+
                     <div class="content">
                     <div class="map-container column-map right-pos-map">
                         <div id="map-main"></div>
@@ -114,6 +115,7 @@
                                             @endforeach
                                         </select>
                                     </div>
+                                    <h1>{{__('auth.failed')}}</h1>
                                     <!-- hidden-listing-filter -->
                                     <div class="hidden-listing-filter fl-wrap">
                                         <div class="distance-input fl-wrap">
@@ -233,7 +235,7 @@
         <footer class="main-footer dark-footer  ">
 
             <div class="sub-footer fl-wrap">
-                <div class="container">
+                <div>
                     <div class="row">
                         <div class="col-md-4">
                             <div class="about-widget">
@@ -247,7 +249,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer class="main-footer dark-footer  ">
         </div>
         <!-- Main end -->
         <!--=============== scripts  ===============-->
